@@ -4,6 +4,8 @@ import axios from "axios";
 import ReCAPTCHA from "react-google-recaptcha";
 import Back from "../../assets/Leftarrow.svg";
 const API_BASE_URL = import.meta.env.VITE_API_BASE_URL;
+const siteKey = import.meta.env.VITE_RECAPTCHA_SITE_KEY;
+
 
 const Login = ({ onLoginSuccess, onClose }) => {
   const navigate = useNavigate();
@@ -99,10 +101,10 @@ const Login = ({ onLoginSuccess, onClose }) => {
           {errorMessage && (
             <p className="text-center mb-4 text-red-500">{errorMessage}</p>
           )}
-
+  
           <form className="max-w-xs mx-auto" onSubmit={handleSubmit}>
             <ReCAPTCHA
-              sitekey="6LeQLI4qAAAAAApAQAdKaG7O2c2hXXtrLseb8jTG"
+              sitekey={siteKey}
               onChange={handleCaptchaChange}
               className="justify-center items-center pb-4 pl-2"
             />
@@ -125,7 +127,7 @@ const Login = ({ onLoginSuccess, onClose }) => {
             </button>
           </form>
         </section>
-      </div>
+      </div>  
     </div>
   );
 };
