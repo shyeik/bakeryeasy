@@ -1,0 +1,66 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+section.hero {
+  @apply grid;
+  grid-template-columns: 0.9fr 0.7fr;
+}
+
+input[type="name"],
+input[type="email"],
+input[type="password"],
+input[type="text"] {
+  @apply block w-full my-2 rounded-xl;
+  @apply border p-2 border-gray-300 bg-gray-200;
+}
+
+body {
+  background: #ffefef;
+}
+
+header {
+  background-color: #ffe6e6;
+  padding: 1rem;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  /* Add a class to your logo div */
+  font-size: 1.5rem;
+  padding: 0.5rem;
+}
+
+.nav-links {
+  /* Add a class to your nav links div */
+  display: flex;
+  gap: 2rem; /* Adjust spacing */
+}
+
+.nav-links a {
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.nav-links a:hover {
+  text-decoration: underline;
+}
+
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;
+}
+.scrollbar-hide {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+
+footer {
+  margin-top: auto;
+}
+
