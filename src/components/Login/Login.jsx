@@ -4,6 +4,7 @@ import axios from "axios";
 import ReCAPTCHA from "react-google-recaptcha";
 import Back from "../../assets/Leftarrow.svg";
 const API_BASE_URL = import.meta.env.VITE_API_BASE_URL;
+const FRONTEND_URL = import.meta.env.VITE_API_BASE_URL;
 const siteKey = import.meta.env.VITE_RECAPTCHA_SITE_KEY;
 
 
@@ -113,7 +114,7 @@ const Login = ({ onLoginSuccess, onClose }) => {
               disabled={!captchaToken}
               className="flex gap-4 justify-center w-full text-gray-700 font-semibold border border-gray-500 rounded-xl px-6 py-2"
               onClick={(e) => {
-                window.location.href = `${API_BASE_URL}/auth/google`;
+                window.location.href = `${FRONTEND_URL}/auth/google`;
               }}
             >
               S
