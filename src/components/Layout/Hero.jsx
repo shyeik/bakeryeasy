@@ -1,5 +1,5 @@
 import React from "react";
-import CakeImage from "/cake.png"; // Replace with your actual image path
+import CakeImage from "/blackforest.png"; // Replace with your actual image path
 import Right from "../icons/Right"; // Replace with your Right icon component
 import { Link } from "react-router-dom";
 import SectionHeaders from "./SectionHeaders"; // Replace with your SectionHeaders component
