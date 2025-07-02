@@ -42,8 +42,6 @@ const Hero = () => {
         </div>
         <div className="relative h-64 md:h-auto mt-8">
           <picture>
-            <source srcset="/images/blackforest.webp" type="image/webp" />
-            <source srcset="/images/blackforest.avif" type="image/avif" />
             <img src={CakeImage} alt="cake" />
           </picture>
         </div>
